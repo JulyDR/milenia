@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Temporary Style while building html */
+
+* {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+} 
+
+html, 
+body {
+    border: none;
+} 
+
+h1,h2,h3,h4,h5,h6,p, a {
+    border: 2px solid rgb(179, 84, 84);
+} 
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fas {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.bg-image {
+    background-color: rgb(220 220 220);
+    min-height: 50vh;
+}
+
+
+/* End Temporary Style */
