@@ -41,5 +41,12 @@ h1,h2,h3,h4,h5,h6,p, a {
     min-height: 50vh;
 }
 
+input,
+textarea {
+    width: 100%;
+    display: block;
+}
+
+
 
 /* End Temporary Style */
