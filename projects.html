@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
         <!-- My Stylesheet -->
         <link rel="stylesheet" href="/style.css">
@@ -21,18 +24,18 @@
     </head>
     <!----------------------This is the header / navigation bar ----------------->
     <body>   
-        <header class="grid">
-            <nav class="col-4-middle">
+        <header class="grid-spaceAround padded-sm">
+            <nav class="col-3_md-4_sm-12-middle">
                 <a href="/index.html">Home </a>
                 <a href="/about.html">About Us </a>
                 <a href="/services.html">Service </a>
             </nav>
-            <div class="col-4-middle">
+            <div class="col-4_sm-12-middle">
                 <a href="/index.html">
-                    <h2 class="Logo text-center">Logo</h2>
+                    <h2 class="bg-logo Logo text-center"></h2>
                 </a>
             </div>
-            <nav class="col-4-middle text-right">
+            <nav class="col-3_md-4_sm-12-middle text-right">
                 <a href="/projects.html">Projects </a>
                 <a href="/blog.html">Blog </a>
                 <a href="/contact.html">Contact Us </a>
@@ -40,63 +43,93 @@
         </header>
 
         <!------------------This is the Headline banner ------------------->
-        <section class="grid">
-            <div class="col-4-middle text-center bg-dark">
-                <h1>40 years combined experience in the sector</h1>
+        <section class="grid bg-dark tall-70">
+            <div class="col-8 bg-image bg-dormitorio"></div>
+            <div class="col-4-middle text-center">
+                <h1>High-end projects<br>for the country and the region</h1>
             </div>
-            <div class="col-8 bg-image"></div>
         </section>
 
         <!------------------This is the ovierview of recent project -->
         <section class="grid">
-            <div class="col-4_sm-12 bg-image"> </div>
-            <div class="col-8_sm-12-middle">
-                <h3 class="text-center">Project 1</h3>
+            <!-- project 1 -->
+            <div class="col-5_sm-12 padded-md">
+                <div class="bg-image bg-sala"> </div>
+            </div>
+            <div class="col-6_sm-12-middle text-center">
+                <h3>Project 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quae sint et, eum qui nisi temporibus accusantium velit debitis quia magni illo excepturi consequuntur ab blanditiis corrupti cum eaque facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam aliquid quia, magnam dicta, accusamus facilis ex libero odit asperiores distinctio nam quae rem quibusdam, eius necessitatibus? Quibusdam odit quia quisquam.</p>
                 <a href="#" class="button">More info</a>
             </div>
-            <div class="col-4_sm-12 bg-image"> </div>
-            <div class="col-8_sm-12-middle">
-                <h3 class="text-center">Project 2</h3>
+            <div class="col-1"></div>
+            <!-- project 2 -->
+            <div class="col-5_sm-12 padded-md">
+                <div class="bg-image bg-terrace"> </div>
+            </div>
+            <div class="col-6_sm-12-middle text-center">
+                <h3>Project 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quae sint et, eum qui nisi temporibus accusantium velit debitis quia magni illo excepturi consequuntur ab blanditiis corrupti cum eaque facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam aliquid quia, magnam dicta, accusamus facilis ex libero odit asperiores distinctio nam quae rem quibusdam, eius necessitatibus? Quibusdam odit quia quisquam.</p>
                 <a href="#" class="button">More info</a>
             </div>
-            <div class="col-4_sm-12 bg-image"> </div>
-            <div class="col-8_sm-12-middle">
-                <h3 class="text-center">Project 3</h3>
+            <div class="col-1"></div>
+            <!-- project 3 -->
+            <div class="col-5_sm-12 padded-md">
+                <div class="bg-image bg-gym"> </div>
+            </div>
+            <div class="col-6_sm-12-middle text-center">
+                <h3>Project 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quae sint et, eum qui nisi temporibus accusantium velit debitis quia magni illo excepturi consequuntur ab blanditiis corrupti cum eaque facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam aliquid quia, magnam dicta, accusamus facilis ex libero odit asperiores distinctio nam quae rem quibusdam, eius necessitatibus? Quibusdam odit quia quisquam.</p>
                 <a href="#" class="button">More info</a>
             </div>
-            <div class="col-4_sm-12 bg-image"> </div>
-            <div class="col-8_sm-12-middle">
-                <h3 class="text-center">Project 4</h3>
+            <div class="col-1"></div>
+            <!-- project 4 -->
+            <div class="col-5_sm-12 padded-md">
+                <div class="bg-image bg-dormitorio"> </div>
+            </div>
+            <div class="col-6_sm-12-middle text-center">
+                <h3>Project 4</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quae sint et, eum qui nisi temporibus accusantium velit debitis quia magni illo excepturi consequuntur ab blanditiis corrupti cum eaque facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam aliquid quia, magnam dicta, accusamus facilis ex libero odit asperiores distinctio nam quae rem quibusdam, eius necessitatibus? Quibusdam odit quia quisquam.</p>
                 <a href="#" class="button">More info</a>
             </div>
+            <div class="col-1"></div>
         </section>
 
 
         <!--------------This is an image gallery of recent projects  -------------------->
-        <section class="grid">
-            <div class="col-6 bg-image"> </div>
-            <div class="col-6 bg-image"> </div>
-            <div class="col-4 bg-image"> </div>
-            <div class="col-4 bg-image"> </div>
-            <div class="col-4 bg-image"> </div>
-        </section>
+       <!--------------This is an image gallery of recent projects  -------------------->
+       <section class="grid gallery">
+        <div class="col-6 ">
+            <div class="bg-image bg-building"> </div>
+        </div>
+
+        <div class="col-6 ">
+            <div class="bg-image bg-dormitorio"> </div>
+        </div>
+            
+        <div class="col-4 ">
+            <div class="bg-image bg-gym"> </div>
+        </div>
+    
+        <div class="col-4 ">
+            <div class="bg-image bg-parqueo"> </div>
+        </div>
+
+        <div class="col-4 ">
+            <div class="bg-image bg-socialarea"> </div>
+        </div>
+    </section>
 
         <!----------------This is the footer section  ------------------------>
-        <footer class="grid">
-           
+        <footer class="grid padded-sm">
             <div class="col-5_sm-12">
-              <h2 class="logo"> Logo </h2>
-              <p> Tel: 12345678 | E-Mail: info@company.org </p>
+              <h2 class="bg-logo"> </h2>
+              <p class="margin-b-0"> Tel: 12345678 | E-Mail: info@company.org </p>
               <p> Fairytale Street 1, Fairytown, Fairyland </p>
             </div>
             <div class="col-1 sm-hidden"></div>
           
             <div class="col-6_sm-12-middle text-right">
-                <h3> Connect with us</h3>
+                <h3 class="margin-r-1"> Connect with us</h3>
                 <nav>
                     <a href="#">
                     <i class="fab fa-facebook-square"></i>
