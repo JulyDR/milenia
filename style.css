@@ -275,9 +275,9 @@ textarea:focus {
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 @media (max-width: 64em) {
     /* Temporary visual hint for responsive editing, delete later */
-    body {
+    /* body {
         border: 2px solid green;
-    }
+    } */
 
     .md-tall-50 {min-height: 50vh;}
 
@@ -301,9 +301,9 @@ textarea:focus {
 /* ------- SM Media Query (48em / 768px) --------------- */ 
 @media (max-width: 48em) {
     /* Temporary visual hint for responsive editing, delete later */
-    body {
+    /* body {
         border: 2px solid blue;
-    }
+    } */
 
     .sm-text-center { text-align: center; }
     .sm-text-left   { text-align: left; }
@@ -347,9 +347,9 @@ textarea:focus {
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 @media (max-width: 36em) {
     /* Temporary visual hint for responsive editing, delete later */
-    body {
+    /* body {
         border: 2px solid lightblue;
-    }
+    } */
 
     .bg-logo {
         background-size: contain;
