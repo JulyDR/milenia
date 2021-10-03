@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {font-size: 3rem;}
-
+h3 {font-size: 2.2rem;}
 h4 {font-size: 2rem;}
 h5 {font-size: 1.2rem;}
 
@@ -114,11 +114,8 @@ p:last-child {
     margin-bottom: 0;
 }
 
-
-
-.big-text {font-size: 8rem;}
-.small-text {font-size: 0.8rem;}
-.light-text {color: #dbd4ca;}
+.big-text {font-size: 8vw;}
+.light-text {color: #c3b8a7;}
 
 
 /*---------------Image Classes ----------------- */
@@ -135,11 +132,6 @@ p:last-child {
     color: #dbd4ca;
 }
 
-.bg-medium {
-    background-color: #344224;
-    color: #dbd4ca;
-}
-
 .bg-light {
     background-color: #8c7b69;
     color: #dbd4ca;
@@ -147,10 +139,12 @@ p:last-child {
 
 .bg-logo {
     background-image: url(/images/Logo.PNG);
-    background-size: 300px;
     background-position: 0% 50%;
     background-repeat: no-repeat;
-    min-height: 10vh;
+    background-size: contain;
+    min-height: 60px;
+    /* width: 100%; */
+    /* height: auto; */
 }
 
 .bg-banner {
@@ -159,41 +153,16 @@ p:last-child {
     background-position: 50% 75%;
 }
 
-.bg-mision {
-    background-image: url(/images/Mission.jpg);
-}
-
-.bg-vision {
-    background-image: url(/images/Vision.jpg);
-}
-
-.bg-dormitorio {
-    background-image: url(/images/dormitorio.PNG);
-}
-
-.bg-building {
-    background-image: url(/images/building.PNG);
-}
-
-.bg-gym {
-    background-image: url(/images/gym.PNG);
-}
-
-.bg-parqueo {
-    background-image: url(/images/parqueo.PNG);
-}
-
-.bg-sala {
-    background-image: url(/images/Sala.PNG);
-}
-
-.bg-socialarea {
-    background-image: url(/images/SocialArea.PNG);
-}
-
-.bg-night {
-    background-image: url(/images/night.jpg);
-}
+.bg-mision      {    background-image: url(/images/Mission.jpg);}
+.bg-vision      {    background-image: url(/images/Vision.jpg);}
+.bg-dormitorio  {    background-image: url(/images/dormitorio.PNG);}
+.bg-building    {    background-image: url(/images/building.PNG);}
+.bg-gym         {    background-image: url(/images/gym.PNG);}
+.bg-parqueo     {    background-image: url(/images/parqueo.PNG);}
+.bg-sala        {    background-image: url(/images/Sala.PNG);}
+.bg-socialarea  {    background-image: url(/images/SocialArea.PNG);}
+.bg-night       {    background-image: url(/images/night.jpg);}
+.bg-map         {    background-image: url(/images/map.jpg);}
 
 .bg-terrace {
     background-image: url(/images/terrace.jpg);
@@ -202,7 +171,7 @@ p:last-child {
 
 .bg-president {
     background-image: url(/images/president.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 50vh;
@@ -211,7 +180,7 @@ p:last-child {
 
 .bg-ceo {
     background-image: url(/images/CEO.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 50vh;
@@ -220,7 +189,7 @@ p:last-child {
 
 .bg-cfo {
     background-image: url(/images/CFO.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 50vh;
@@ -232,20 +201,14 @@ p:last-child {
     min-height: 40vh;
 }
 
-
-.bg-map {
-    background-image: url(/images/map.jpg);
-}
-
-
 .gallery [class*="col-"] {
     padding: 0.5%;
 }
 
 
-
-
 /*-------Section Styles ----------------*/
+nav {font-size: 0.8rem;}
+
 nav a {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -259,7 +222,7 @@ nav a:hover{
 
 h1 span {
     display: block;
-    font-size: 2rem;
+    font-size: 3vw;
     line-height: 0.9;
 }
 
@@ -309,3 +272,115 @@ textarea:focus {
     border: 2px solid #a1bb83;
     outline: none;
 }
+
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+@media (max-width: 64em) {
+    /* Temporary visual hint for responsive editing, delete later */
+    body {
+        border: 2px solid green;
+    }
+
+    .md-tall-50 {min-height: 50vh;}
+
+    h2 {font-size: 1.9rem;}
+    h3 {font-size: 1.7rem;}
+    h4 {font-size: 1.8rem;}
+    p {font-size: 0.9rem;}
+
+    .fas {font-size: 2.8rem;    }
+    
+
+    .bg-banner { min-height: 60vh; }
+    .bg-president {min-width: 20vw;}
+    .bg-ceo {min-width: 20vw;}
+    .bg-cfo {min-width: 20vw;}
+    
+
+    .button {padding: 0.6rem 3rem;}
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+@media (max-width: 48em) {
+    /* Temporary visual hint for responsive editing, delete later */
+    body {
+        border: 2px solid blue;
+    }
+
+    .sm-text-center { text-align: center; }
+    .sm-text-left   { text-align: left; }
+    .sm-text-right  { text-align: right; }
+
+    .bg-logo {
+        background-size: contain;
+        min-height: 40px;
+        width: 100%;
+        margin-left: 40%;
+        /* height: auto; */
+    }
+    .bg-banner {min-height: 40vh; }
+   
+    .sm-tall-40 {min-height: 40vh;}
+
+    .hide-sm { display: none;  }
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+
+    h1 {font-size: 1.2rem;}
+    h2 {font-size: 1.9rem;}
+    h3 {font-size: 1.6rem;}
+    h4 {font-size: 1.6rem;}
+    p {font-size: 0.8rem;}
+
+    .fas {
+        font-size: 2.5rem;
+    }
+    
+    footer h3 {font-size: 1.3rem;}
+    footer p {font-size: 0.8rem;}
+
+    .button {padding: 0.5rem 2.5rem; }
+    a.button {font-size: 0.8rem;}
+
+    .sm-lineheight {line-height: 0.8;}
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+@media (max-width: 36em) {
+    /* Temporary visual hint for responsive editing, delete later */
+    body {
+        border: 2px solid lightblue;
+    }
+
+    .bg-logo {
+        background-size: contain;
+        min-height: 40px;
+        width: 100%;
+        margin-left: 35%;
+        /* height: auto; */
+    }
+
+    .bg-image {min-height: 20vh;}
+    .xs-tall-30 {min-height: 30vh;}
+
+    .hide-xs { display: none;  }
+
+    .fas {
+        font-size: 2rem;
+    }
+    
+    h1 {font-size: 1rem;}
+    h2 {font-size: 1.7rem;}
+    h3 {font-size: 1.2rem;}
+    h4 {font-size: 1.4rem;}
+    p {font-size: 0.8rem;
+}
+
+    footer h3 {font-size: 1rem;}
+    footer p {font-size: 0.7rem;}
+
+    .button {padding: 0.5rem 2rem;}
+    a.button {font-size: 0.7rem;}
+}
+
