@@ -142,9 +142,7 @@ p:last-child {
     background-position: 0% 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 60px;
-    /* width: 100%; */
-    /* height: auto; */
+    min-height: 80px;
 }
 
 .bg-banner {
@@ -153,8 +151,8 @@ p:last-child {
     background-position: 50% 75%;
 }
 
-.bg-mision      {    background-image: url(/images/Mission.jpg);}
-.bg-vision      {    background-image: url(/images/Vision.jpg);}
+.bg-mision      {    background-image: url(/images/mision.jpg);}
+.bg-vision      {    background-image: url(/images/vision.jpg);}
 .bg-dormitorio  {    background-image: url(/images/dormitorio.PNG);}
 .bg-building    {    background-image: url(/images/building.PNG);}
 .bg-gym         {    background-image: url(/images/gym.PNG);}
@@ -207,7 +205,7 @@ p:last-child {
 
 
 /*-------Section Styles ----------------*/
-nav {font-size: 0.8rem;}
+nav {font-size: 0.9rem;}
 
 nav a {
     margin-left: 1rem;
